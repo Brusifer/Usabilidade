@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagamento</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="pagamento1.css">
+</head>
+<body>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Pagamento</h2>
+  <div class="recibo">
+    <h3>Total:<h3>
+    <li>2 Ingressos Meia R$16,00</li>
+    <li>1 Ingresso       R$16,00</li>
+    <li>Total a Pagar:   R$32,00</li>
+  </div>
+
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
+  <button class="bt btn-dark" id="btCobo">Comprar Combo</button>
+  <button class="bt btn-dark" id="btOk">Continuar Pagamento</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+        window.location.href = "confirmacao.html";
+    };
+    document.getElementById("btOk").onclick = function () {
+        window.location.href = "pagamento2.html";
+    };
+	</script>
+</body>
+</html>
