@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecao de Forma de Pagamento</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="pagamento2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Selecione a forma de pagamento</h2>
+  <div class="msgCartao">
+    <p>Mensagem do Cartão de Crédito</p>
+  </div>
+  <div class="mostraCartoes">
+    <button id="botaoEsquerda" class="btn btn-outline-dark"><</button>
+    <div class="cartao">
+      <img class="imagem" src="elo-810x486.png" alt="Elo">
+    </div>
+    <div class="cartao">
+      <img class="imagem" src="MasterCard-vale-a-pena.jpg" alt="MasterCard">
+    </div>
+    <div class="cartao">
+      <img class="imagem" src="o-que-Visa-Electron.jpg" alt="Visa">
+    </div>
+    <div class="cartao">
+      <img class="imagem" src="american-express-logo-wallpaper.jpg" alt="American Express">
+    </div>
+    <button id="botaoDireita" class="btn btn-outline-dark">></button>
+  </div>
+  <button class="bt btn-dark" id="btVoltar">Voltar</button>
+  <button class="bt btn-dark" id="btOk">Retirar Ingresso</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+        window.location.href = "pagamento1.html";
+    };
+  </script>
+</body>
+</html>
