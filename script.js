@@ -9,3 +9,7 @@ function selFilme(){
 function selHorario(){
 	window.location.href = "selecao-local.html";
 }
+
+function selLocal(){
+	window.location.href = "selecao-cadeira.html";
+}
