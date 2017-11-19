@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecione a Localização</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="selecao-local.css">
+</head>
+<body>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Horários Disponiveis</h2>
+	<div>
+    <button onclick="selLocal()">Lado A</button>
+    <div>
+		<button onclick="selLocal()">Fundo</button>
+		<button onclick="selLocal()">Meio</button>
+		<button onclick="selLocal()">Frente</button>
+    </div>
+    <button onclick="selLocal()">Lado B</button>
+    <h2>Tela</h2>
+	</div>
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+				window.location.href = "selecao-horario.html";
+		};
+	</script>
+</body>
+</html>

@@ -7,15 +7,24 @@
   	font-size: 20px;
 }
 .imagem{
-	height: 300px;
+	width: 100px ;
+	height: 55px;
 }
-.mostraFilme{
+
+.msgCartao{
+	border: 1px solid black;
+}
+.mostraCartoes{
+	align-content: center;
+}
+.cartao{
 	border: 1px solid black;
 	display: inline-block;
+	margin: 20px;
 }
-.cartaz{
-	border: 1px solid black;
-	padding: 10px;
+
+.recibo{
+  text-align: left;
 }
 li{
 	list-style-type: none;

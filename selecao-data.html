@@ -3,15 +3,17 @@
 <head>
 	<title>Selecao do dia</title>
 	<link rel="stylesheet" type="text/css" href="selecao-data.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<button class="bt" onclick="cancelar()">Cancelar</button>
-	<h2>Selecione a data que ira ver o filme</h2>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Selecione a data do filme</h2>
 	<div>
-		<button id="botaoEsquerda" class="btMes"><</button>
+		<button id="botaoEsquerda" class="btn btn-outline-dark"><</button>
 		<label>Novembro</label>
-		<button id="botaoDireita" class="btMes">></button>
+		<button id="botaoDireita" class="btn btn-outline-dark">></button>
 	</div>
 	<div>
 		<label id="dom" class="dia">Dom</label>
@@ -23,52 +25,52 @@
 		<label id="sab" class="dia">Sab</label>
 	</div>
 	<div class="semana" id="semana1">
-		<button class="botao_n_disponivel" id="dia 1">1</button>
-		<button class="botao_n_disponivel" id="dia 2">2</button>
-		<button class="botao_n_disponivel" id="dia 3">3</button>
-		<button class="botao_n_disponivel" id="dia 4">4</button>
-		<button class="botao_n_disponivel" id="dia 5">5</button>
-		<button class="botao_n_disponivel" id="dia 6">6</button>
-		<button class="botao_n_disponivel" id="dia 7">7</button>
+		<button class="btn btn-secondary" disabled id="dia 1">1</button>
+		<button class="btn btn-secondary" disabled id="dia 2">2</button>
+		<button class="btn btn-secondary" disabled id="dia 3">3</button>
+		<button class="btn btn-secondary" disabled id="dia 4">4</button>
+		<button class="btn btn-secondary" disabled id="dia 5">5</button>
+		<button class="btn btn-secondary" disabled id="dia 6">6</button>
+		<button class="btn btn-secondary" disabled id="dia 7">7</button>
 	</div>
 	<div class="semana" id="semana2">
-		<button class="botao_n_disponivel" id="dia 8">8</button>
-		<button class="botao_n_disponivel" id="dia 9">9</button>
-		<button class="botao_n_disponivel" id="dia 10">10</button>
-		<button class="botao_n_disponivel" id="dia 11">11</button>
-		<button class="botao_n_disponivel" id="dia 12">12</button>
-		<button class="botao_n_disponivel" id="dia 13">13</button>
-		<button class="botao_n_disponivel" id="dia 14">14</button>
+		<button class="btn btn-secondary" disabled id="dia 8">8</button>
+		<button class="btn btn-secondary" disabled id="dia 9">9</button>
+		<button class="btn btn-secondary" disabled id="dia 10">10</button>
+		<button class="btn btn-secondary" disabled id="dia 11">11</button>
+		<button class="btn btn-secondary" disabled id="dia 12">12</button>
+		<button class="btn btn-secondary" disabled id="dia 13">13</button>
+		<button class="btn btn-secondary" disabled id="dia 14">14</button>
 	</div>
 	<div class="semana" id="semana3">
-		<button class="botao_n_disponivel" id="dia 15">15</button>
-		<button class="botao_n_disponivel" id="dia 16">16</button>
-		<button class="botao_n_disponivel" id="dia 17">17</button>
-		<button class="botao" id="dia 18" onclick="selFilme()">18</button>
-		<button class="botao" id="dia 19" onclick="selFilme()">19</button>
-		<button class="botao" id="dia 20" onclick="selFilme()">20</button>
-		<button class="botao" id="dia 21" onclick="selFilme()">21</button>
+		<button class="btn btn-secondary" disabled id="dia 15">15</button>
+		<button class="btn btn-secondary" disabled id="dia 16">16</button>
+		<button class="btn btn-secondary" disabled id="dia 17">17</button>
+		<button class="btn btn-primary" id="dia 18" onclick="selFilme()">18</button>
+		<button class="btn btn-primary" id="dia 19" onclick="selFilme()">19</button>
+		<button class="btn btn-primary" id="dia 20" onclick="selFilme()">20</button>
+		<button class="btn btn-primary" id="dia 21" onclick="selFilme()">21</button>
 	</div>
 	<div class="semana" id="semana4">
-		<button class="botao" id="dia 22" onclick="selFilme()">22</button>
-		<button class="botao" id="dia 23" onclick="selFilme()">23</button>
-		<button class="botao" id="dia 24" onclick="selFilme()">24</button>
-		<button class="botao" id="dia 25" onclick="selFilme()">25</button>
-		<button class="botao" id="dia 26" onclick="selFilme()">26</button>
-		<button class="botao_n_disponivel" id="dia 27">27</button>
-		<button class="botao_n_disponivel" id="dia 28">28</button>
+		<button class="btn btn-primary" id="dia 22" onclick="selFilme()">22</button>
+		<button class="btn btn-primary" id="dia 23" onclick="selFilme()">23</button>
+		<button class="btn btn-primary" id="dia 24" onclick="selFilme()">24</button>
+		<button class="btn btn-primary" id="dia 25" onclick="selFilme()">25</button>
+		<button class="btn btn-primary" id="dia 26" onclick="selFilme()">26</button>
+		<button class="btn btn-secondary" disabled id="dia 27">27</button>
+		<button class="btn btn-secondary" disabled id="dia 28">28</button>
 	</div>
 	<div class="semana" id="semana5">
-		<button class="botao_n_disponivel" id="dia 29">29</button>
-		<button class="botao_n_disponivel" id="dia 30">30</button>
-		<button class="botao_dez" id="dia 01">01</button>
-		<button class="botao_dez" id="dia 02">02</button>
-		<button class="botao_dez" id="dia 03">03</button>
-		<button class="botao_dez" id="dia 04">04</button>
-		<button class="botao_dez" id="dia 05">05</button>
+		<button class="btn btn-secondary" disabled id="dia 29">29</button>
+		<button class="btn btn-secondary" disabled id="dia 30">30</button>
+		<button class="btn btn-outline-secondary" disabled id="dia 01">01</button>
+		<button class="btn btn-outline-secondary" disabled id="dia 02">02</button>
+		<button class="btn btn-outline-secondary" disabled id="dia 03">03</button>
+		<button class="btn btn-outline-secondary" disabled id="dia 04">04</button>
+		<button class="btn btn-outline-secondary" disabled id="dia 05">05</button>
 	</div>
 
-	<button class="bt" id="btVoltar">Voltar</button>
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
 	<script type="text/javascript">
 		document.getElementById("btVoltar").onclick = function () {
         window.location.href = "index.html";

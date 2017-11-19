@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirmação de Ingressos</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="confirmacao.css">
+</head>
+<body>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Confirmação de Ingressos</h2>
+	<div id="selFilmes">
+		<div class="mostraFilme">
+			<div class="cartaz">
+				<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
+			</div>
+			<h3>Thor Ragnarok</h3>
+      <li>19/11 - 15h</li>
+			<li>Cadeira:A4</li>
+      <li>Sala 4</li>
+			<li>Meia:<input type="checkbox"></li>
+			<li>Valor: R$16,00</li>
+		</div>
+
+    <div class="mostraFilme">
+			<div class="cartaz">
+				<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
+			</div>
+			<h3>Thor Ragnarok</h3>
+      <li>19/11 - 15h</li>
+			<li>Cadeira:A4</li>
+      <li>Sala 4</li>
+			<li>Meia:<input checked type="checkbox"></li>
+			<li>Valor: R$8,00</li>
+		</div>
+
+    <div class="mostraFilme">
+			<div class="cartaz">
+				<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
+			</div>
+			<h3>Thor Ragnarok</h3>
+      <li>19/11 - 15h</li>
+			<li>Cadeira:A4</li>
+      <li>Sala 4</li>
+			<li>Meia:<input checked type="checkbox"></li>
+			<li>Valor: R$8,00</li>
+		</div>
+	</div>
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
+  <button class="bt btn-dark" id="btOk">Ok</button>
+
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+        window.location.href = "selecao-cadeira.html";
+    };
+    document.getElementById("btOk").onclick = function () {
+        window.location.href = "pagamento1.html";
+    };
+	</script>
+</body>
+</html>

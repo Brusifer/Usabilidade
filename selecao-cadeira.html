@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecao de Cadeira</title>
+	<link rel="stylesheet" type="text/css" href="selecao-cadeira.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Selecione a(s) Cadeira(s)</h2>
+	<div>
+		<label id="1" class="coluna">1</label>
+		<label id="2" class="coluna">2</label>
+		<label id="3" class="coluna">3</label>
+		<label id="4" class="coluna">4</label>
+		<label id="5" class="coluna">5</label>
+		<label id="6" class="coluna">6</label>
+		<label id="7" class="coluna">7</label>
+    <label id="8" class="coluna">8</label>
+    <label id="9" class="coluna">9</label>
+    <label id="10" class="coluna">10</label>
+	</div>
+
+	<div class="fileira" id="fileira1">
+    <label>A</label>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+	</div>
+
+  <div class="fileira" id="fileira2">
+    <label>B</label>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+	</div>
+
+  <div class="fileira" id="fileira3">
+    <label>C</label>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+	</div>
+
+  <div class="fileira" id="fileira4">
+    <label>D</label>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+		<button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+    <button class="btn btn-secondary" disabled id="poltrona"></button>
+	</div>
+
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
+  <button class="bt btn-dark" id="btOk">Ok</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+        window.location.href = "selecao-local.html";
+    };
+    document.getElementById("btOk").onclick = function () {
+        window.location.href = "confirmacao.html";
+    };
+	</script>
+</body>
+</html>

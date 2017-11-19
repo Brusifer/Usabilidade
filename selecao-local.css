@@ -21,7 +21,11 @@ li{
 	list-style-type: none;
 }
 h2{
-	text-align: center;
+  text-align: center;
+}
+div{
+  text-align: center;
+  margin: 20px;
 }
 #selFilmes{
 	text-align: center;

@@ -6,7 +6,10 @@ div{
   margin: 20px;
 }
 
+#btOk{
+  align:right;
 }
+
 .diasSem{
 	display: inline-block;
   width: 13.6%;
@@ -31,4 +34,3 @@ div{
   width: 100px;
   height: 50px;
 }
-
