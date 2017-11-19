@@ -1,0 +1,40 @@
+.btn-dark{
+	padding-top: 10px;
+  	padding-right: 20px;
+  	padding-left: 20px;
+  	padding-bottom: 10px;
+  	margin: 20px;
+  	font-size: 20px;
+}
+.imagem{
+	width: 100px ;
+	height: 55px;
+}
+
+.msgCartao{
+	border: 1px solid black;
+}
+.mostraCartoes{
+	align-content: center;
+}
+.cartao{
+	border: 1px solid black;
+	display: inline-block;
+	margin: 20px;
+}
+
+.recibo{
+  text-align: left;
+}
+li{
+	list-style-type: none;
+}
+h2{
+	text-align: center;
+}
+#selFilmes{
+	text-align: center;
+}
+a:visited, a:link{
+	color: black;
+}
