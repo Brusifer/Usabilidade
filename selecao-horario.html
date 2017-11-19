@@ -2,9 +2,30 @@
 <html>
 <head>
 	<title>Selecao de Horario</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="selecao-horario.css">
 </head>
 <body>
-	<h1>nao ta mais passando</h1>
-
+	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
+	<h2>Horários Disponiveis</h2>
+	<div>
+		<h2>Nome do Filme</h2><h2>Duração</h2>
+		<h2>Sinopse:</h2><p>No filme da Marvel Studios, "Thor: Ragnarok", Thor é preso do outro lado do universo, sem o seu martelo poderoso e encontra-se numa corrida contra o tempo para voltar a Asgard e impedir Ragnarok - a destruição do seu mundo e o fim da civilização Asgardiana -, que se encontra nas mãos de uma nova e poderosa ameaça, a implacável Hela. Mas, primeiro precisa de sobreviver a uma luta mortal de gladiadores, que o coloca contra um ex-aliado e companheiro Vingador - Hulk.</p>
+	</div>
+	<div>
+		<div><button id="botaoEsquerda" class="btn btn-outline-dark"><</button></div>
+		<button onclick="selHorario()">15h</button>
+		<button onclick="selHorario()">17h</button>
+		<br/>
+		<button onclick="selHorario()">19h</button>
+		<button onclick="selHorario()">21h</button>
+		<div><button id="botaoDireita" class="btn btn-outline-dark">></button></div>
+	</div>
+	<button class="bt btn-dark" id="btVoltar">Voltar</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+				window.location.href = "selecao-data.html";
+		};
+	</script>
 </body>
 </html>
