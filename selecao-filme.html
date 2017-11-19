@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecao de filmes</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="selecao-filme.css">
+</head>
+<body>
+	<button class="bt" onclick="cancelar()">Cancelar</button>
+	<h2>Selecione o filme que ira assistir</h2>
+	<div id="selFilmes">
+		<button><</button>
+		<a href="selecao-horario.html">
+			<div class="mostraFilme">
+				<div class="cartaz">
+					<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
+				</div>
+				<h3>Thor Ragnarok</h3>
+				<li>Genero: Acao</li>
+				<li>Duracao: 2:00</li>
+				<li>Proxima Sessao: 16:30h</li>
+			</div>
+		</a>
+		<a>
+			<div class="mostraFilme">
+				<div class="cartaz">
+					<img class="imagem" src="liga-justica.jpg" alt="Liga da Justica">
+				</div>
+				<h3>Liga da Justica</h3>
+				<li>Genero: Acao</li>
+				<li>Duracao: 2:00</li>
+				<li>Proxima Sessao: 17:30h</li>
+			</div>
+		</a>
+		<a>
+			<div class="mostraFilme">
+				<div class="cartaz">
+					<img class="imagem" src="nemo.jpg" alt="Procurando Nemo">
+				</div>
+				<h3>Procurando Nemo</h3>
+				<li>Genero: Aventura</li>
+				<li>Duracao: 1:45</li>
+				<li>Proxima Sessao: 18:00h</li>
+			</div>
+		</a>
+		<button>></button>
+	</div>
+	<button class="bt" id="btVoltar">Voltar</button>
+	<script type="text/javascript">
+		document.getElementById("btVoltar").onclick = function () {
+        window.location.href = "selecao-data.html";
+    };
+	</script>
+</body>
+</html>
