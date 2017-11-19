@@ -1,7 +1,5 @@
-.botao{
+.btn{
     padding: 100px;
-    border: 5px solid black;
-    background-color: white; 
     top: 50%;
     bottom: 50%;
     margin: 50px;
