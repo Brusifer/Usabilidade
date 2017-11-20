@@ -6,6 +6,9 @@
   	margin: 20px;
   	font-size: 20px;
 }
+#btCancelar{
+  position: absolute;
+}
 .imagem{
 	width: 100px ;
 	height: 55px;

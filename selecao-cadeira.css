@@ -30,6 +30,10 @@ div{
   font-size: 20px;
 }
 
+#btCancelar{
+  position: absolute;
+}
+
 .btn-secondary, .btn-outline-secondary, .btn-primary {
   width: 100px;
   height: 50px;
