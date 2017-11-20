@@ -23,6 +23,8 @@
 
 .recibo{
   text-align: left;
+  border: 2px solid black;
+  margin: 100px;
 }
 li{
 	list-style-type: none;

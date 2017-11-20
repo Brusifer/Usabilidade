@@ -13,3 +13,11 @@ function selHorario(){
 function selLocal(){
 	window.location.href = "selecao-cadeira.html";
 }
+
+function selecionaCadeira(id){
+	if(document.getElementById(id).className.match("btn-selectable")){
+		document.getElementById(id).className = "btn-selected";
+	}else{
+		document.getElementById(id).className = "btn-selectable";
+	}
+}
