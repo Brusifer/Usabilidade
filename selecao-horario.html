@@ -3,6 +3,8 @@
 <head>
 	<title>Selecao de Horario</title>
 	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="selecao-horario.css">
 </head>
 <body>
@@ -21,6 +23,19 @@
 		<button onclick="selHorario()">21h</button>
 		<div><button id="botaoDireita" class="btn btn-outline-dark">></button></div>
 	</div>
+
+	<h3>Etapa</h3>
+	<div id="etapas">
+		<button disbled class="etapa">1</button>
+		<button disbled class="etapa">2</button>
+		<button disbled class="etapa" id="essa">3</button>
+		<button disbled class="etapa">4</button>
+		<button disbled class="etapa">5</button>
+		<button disbled class="etapa">6</button>
+		<button disbled class="etapa">7</button>
+		<button disbled class="etapa">8</button>
+	</div>
+	
 	<button class="bt btn-dark" id="btVoltar">Voltar</button>
 	<script type="text/javascript">
 		document.getElementById("btVoltar").onclick = function () {

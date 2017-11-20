@@ -31,4 +31,15 @@ div{
   width: 100px;
   height: 50px;
 }
+h3, #etapas{
+  text-align: center;
+}
+.etapa{
+  background-color: lightgray;
+  border-radius: 100%;
+}
+#essa{
+  color: white;
+  background-color: green;
+}
 
