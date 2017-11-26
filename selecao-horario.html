@@ -6,41 +6,55 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="selecao-horario.css">
+	<meta charset="utf-8">
 </head>
 <body>
+	<br/>
 	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
-	<h2>Horários Disponiveis</h2>
-	<div>
-		<h2>Nome do Filme</h2><h2>Duração</h2>
-		<h2>Sinopse:</h2><p>No filme da Marvel Studios, "Thor: Ragnarok", Thor é preso do outro lado do universo, sem o seu martelo poderoso e encontra-se numa corrida contra o tempo para voltar a Asgard e impedir Ragnarok - a destruição do seu mundo e o fim da civilização Asgardiana -, que se encontra nas mãos de uma nova e poderosa ameaça, a implacável Hela. Mas, primeiro precisa de sobreviver a uma luta mortal de gladiadores, que o coloca contra um ex-aliado e companheiro Vingador - Hulk.</p>
-	</div>
-	<div>
-		<div><button id="botaoEsquerda" class="btn btn-outline-dark"><</button></div>
-		<button onclick="selHorario()">15h</button>
-		<button onclick="selHorario()">17h</button>
-		<br/>
-		<button onclick="selHorario()">19h</button>
-		<button onclick="selHorario()">21h</button>
-		<div><button id="botaoDireita" class="btn btn-outline-dark">></button></div>
-	</div>
+	<div class="container">
+		<h2>Horários Disponiveis</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="thor-ragnarok.jpg" class="imagem">
+			</div>
+			<div class="col-sm-8">
+				<h3>Nome do Filme:Thor:Ragnarok</h3><h3>Duração:2h10min</h3>
+				<h3>Sinopse:</h3><p>No filme da Marvel Studios, "Thor: Ragnarok", Thor é preso do outro lado do universo, sem o seu martelo poderoso e encontra-se numa corrida contra o tempo para voltar a Asgard e impedir Ragnarok - a destruição do seu mundo e o fim da civilização Asgardiana -, que se encontra nas mãos de uma nova e poderosa ameaça, a implacável Hela. Mas, primeiro precisa de sobreviver a uma luta mortal de gladiadores, que o coloca contra um ex-aliado e companheiro Vingador - Hulk.</p>
+			</div>
+		</div>
+		<div class="row" id="botoes">
+		<div class="col-sm-5"><button id="botaoEsquerda" class="btn btn-outline-dark"><</button></div>
+		<div class="col-sm-2">
+			<button onclick="selHorario()" class="btn btn-primary btn-lg">15h</button>
+			<button onclick="selHorario()" class="btn btn-primary btn-lg">17h</button>
+			<br/>
+			<button onclick="selHorario()" class="btn btn-primary btn-lg">19h</button>
+			<button onclick="selHorario()" class="btn btn-primary btn-lg">21h</button>
+		</div>
+		<div class="col-sm-5"><button id="botaoDireita" class="btn btn-outline-dark">></button></div>
+		</div>
 
-	<h3>Etapa</h3>
-	<div id="etapas">
-		<button disbled class="etapa">1</button>
-		<button disbled class="etapa">2</button>
-		<button disbled class="etapa" id="essa">3</button>
-		<button disbled class="etapa">4</button>
-		<button disbled class="etapa">5</button>
-		<button disbled class="etapa">6</button>
-		<button disbled class="etapa">7</button>
-		<button disbled class="etapa">8</button>
+		<br/>
+
+
+		<h2>Etapa</h2>
+		<div id="etapas">
+			<button disbled class="etapa">1</button>
+			<button disbled class="etapa">2</button>
+			<button disbled class="etapa" id="essa">3</button>
+			<button disbled class="etapa">4</button>
+			<button disbled class="etapa">5</button>
+			<button disbled class="etapa">6</button>
+			<button disbled class="etapa">7</button>
+			<button disbled class="etapa">8</button>
+		</div>
 	</div>
-	
 	<button class="bt btn-dark" id="btVoltar">Voltar</button>
 	<script type="text/javascript">
 		document.getElementById("btVoltar").onclick = function () {
 				window.location.href = "selecao-filme.html";
 		};
 	</script>
+	
 </body>
 </html>

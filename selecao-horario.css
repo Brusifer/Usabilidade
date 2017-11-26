@@ -24,24 +24,28 @@ li{
 h2{
   text-align: center;
 }
-div{
-  text-align: center;
-  margin: 20px;
-}
-#selFilmes{
-	text-align: center;
-}
-a:visited, a:link{
-	color: black;
-}
-h3, #etapas{
+#etapas{
   text-align: center;
 }
 .etapa{
   background-color: lightgray;
   border-radius: 100%;
+  float: bottom;
 }
 #essa{
   color: white;
   background-color: green;
+}
+#botoes{
+	text-align: center;
+}
+#botaoDireita{
+  float: left;
+}
+#botaoEsquerda{
+  float: right;
+}
+.imagem{
+	height: 400px;
+  float: right;
 }

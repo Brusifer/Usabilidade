@@ -6,10 +6,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="confirmacao.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<button class="bt btn-dark" onclick="cancelar()" id="btCancelar">Cancelar</button>
-	<h2>Confirmação de Ingressos</h2>
+	<h2>Confirme se os ingressos estão corretos</h2>
+	<h2 id="atencao">Atenção: Indique quais ingressos são meia entrada</h2>
 	<div id="selFilmes">
 		<div class="mostraFilme">
 			<div class="cartaz">
@@ -31,7 +33,7 @@
       <li>19/11 - 15h</li>
 			<li>Cadeira:A4</li>
       <li>Sala 4</li>
-			<li>Meia:<input checked type="checkbox"></li>
+			<li>Meia:<input type="checkbox"></li>
 			<li>Valor: R$8,00</li>
 		</div>
 
@@ -43,7 +45,7 @@
       <li>19/11 - 15h</li>
 			<li>Cadeira:A4</li>
       <li>Sala 4</li>
-			<li>Meia:<input checked type="checkbox"></li>
+			<li>Meia:<input type="checkbox"></li>
 			<li>Valor: R$8,00</li>
 		</div>
 	</div>

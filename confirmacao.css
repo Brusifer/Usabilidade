@@ -26,6 +26,9 @@ li{
 h2{
 	text-align: center;
 }
+#atencao{
+	color: red;
+}
 #selFilmes{
 	text-align: center;
 }
@@ -42,4 +45,8 @@ h3, #etapas{
 #essa{
   color: white;
   background-color: green;
+}
+
+#btOk{
+  float: right;
 }

@@ -34,14 +34,11 @@ div{
   position: absolute;
 }
 
-.btn-secondary, .btn-outline-secondary, .btn-primary, .btn-selectable, .btn-selected{
+.btn-secondary, .btn-outline-secondary, .btn-primary, .btn-selectable, .btn-success{
   width: 100px;
   height: 50px;
+  border-radius: 5px
 }
-.btn-secondary{
-  background-color: red;
-}
-
 .btn-selected{
   background-color: green;
 }
@@ -56,4 +53,11 @@ h3, #etapas{
 #essa{
   color: white;
   background-color: green;
+}
+.coluna{
+  font-size: 40px;
+  padding-left: 80px;
+}
+#btOk{
+  float: right;
 }

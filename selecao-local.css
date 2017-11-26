@@ -45,3 +45,17 @@ h3, #etapas{
   color: white;
   background-color: green;
 }
+#locais{
+  padding-left: 100px
+}
+#ladoDireito{
+	float: left;
+}
+#ladoEsquerdo{
+	float: right;
+}
+#tela{
+  border: 2px solid black;
+  color: white;
+  background-color: lightgray;
+}

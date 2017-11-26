@@ -16,8 +16,19 @@ function selLocal(){
 
 function selecionaCadeira(id){
 	if(document.getElementById(id).className.match("btn-selectable")){
-		document.getElementById(id).className = "btn-selected";
+		document.getElementById(id).className = "btn btn-secondary btn-success";
 	}else{
-		document.getElementById(id).className = "btn-selectable";
+		document.getElementById(id).className = "btn btn-secondary btn-selectable";
 	}
+}
+
+var filme;
+
+function filmeEscolhido(id){
+	localStorage.setItem('filme', id);	
+}
+
+function recuperaFilme() {
+	return localStorage.getItem('filme');
+
 }
