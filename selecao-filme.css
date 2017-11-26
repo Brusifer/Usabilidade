@@ -41,3 +41,6 @@ h3, #etapas{
   color: white;
   background-color: green;
 }
+#btDireita, #btEsquerda{
+  margin-top: 200px
+}

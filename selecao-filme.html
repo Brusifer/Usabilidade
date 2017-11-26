@@ -9,57 +9,64 @@
 </head>
 <body>
 	<button class="bt btn-dark" onclick="cancelar()">Cancelar</button>
-	<h2>Selecione o filme</h2>
-	<div id="selFilmes">
-		<button class="btn btn-outline-dark"><</button>
-		<a id="Thor" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
-			<div class="mostraFilme">
-				<div class="cartaz">
-					<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
-				</div>
-				<h3>Thor Ragnarok</h3>
-				<li>Genero: Acao</li>
-				<li>Duracao: 2:00</li>
-				<li>Proxima Sessao: 16:30h</li>
+	<div class="container">
+		<h2>Selecione o filme</h2>
+		<div id="selFilmes" class="row">
+			<div  class="col-sm-2">
+				<button class="btn btn-outline-dark" id="btDireita"><</button>
 			</div>
-		</a>
-		<a id="Liga" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
-			<div class="mostraFilme">
-				<div class="cartaz">
-					<img class="imagem" src="liga-justica.jpg" alt="Liga da Justica">
-				</div>
-				<h3>Liga da Justica</h3>
-				<li>Genero: Acao</li>
-				<li>Duracao: 2:00</li>
-				<li>Proxima Sessao: 17:30h</li>
+			<div class="col-sm-8">
+				<a id="Thor" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
+					<div class="mostraFilme">
+						<div class="cartaz">
+							<img class="imagem" src="thor-ragnarok.jpg" alt="Thor Ragnarok">
+						</div>
+						<h3>Thor Ragnarok</h3>
+						<li>Genero: Acao</li>
+						<li>Duracao: 2:00</li>
+						<li>Proxima Sessao: 16:30h</li>
+					</div>
+				</a>
+				<a id="Liga" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
+					<div class="mostraFilme">
+						<div class="cartaz">
+							<img class="imagem" src="liga-justica.jpg" alt="Liga da Justica">
+						</div>
+						<h3>Liga da Justica</h3>
+						<li>Genero: Acao</li>
+						<li>Duracao: 2:00</li>
+						<li>Proxima Sessao: 17:30h</li>
+					</div>
+				</a>
+				<a id="Nemo" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
+					<div class="mostraFilme">
+						<div class="cartaz">
+							<img class="imagem" src="nemo.jpg" alt="Procurando Nemo">
+						</div>
+						<h3>Procurando Nemo</h3>
+						<li>Genero: Aventura</li>
+						<li>Duracao: 1:45</li>
+						<li>Proxima Sessao: 18:00h</li>
+					</div>
+				</a>
 			</div>
-		</a>
-		<a id="Nemo" href="selecao-horario.html" onclick="filmeEscolhido(this.id)">
-			<div class="mostraFilme">
-				<div class="cartaz">
-					<img class="imagem" src="nemo.jpg" alt="Procurando Nemo">
-				</div>
-				<h3>Procurando Nemo</h3>
-				<li>Genero: Aventura</li>
-				<li>Duracao: 1:45</li>
-				<li>Proxima Sessao: 18:00h</li>
+			<div class="col-sm-2" >
+				<button class="btn btn-outline-dark" id="btEsquerda">></button>
 			</div>
-		</a>
-		<button class="btn btn-outline-dark" >></button>
-	</div>
+		</div>
 
-	<h3>Etapa</h3>
-	<div id="etapas">
-		<button disbled class="etapa">1</button>
-		<button disbled class="etapa" id="essa">2</button>
-		<button disbled class="etapa">3</button>
-		<button disbled class="etapa">4</button>
-		<button disbled class="etapa">5</button>
-		<button disbled class="etapa">6</button>
-		<button disbled class="etapa">7</button>
-		<button disbled class="etapa">8</button>
+		<h3>Etapa</h3>
+		<div id="etapas">
+			<button disbled class="etapa">1</button>
+			<button disbled class="etapa" id="essa">2</button>
+			<button disbled class="etapa">3</button>
+			<button disbled class="etapa">4</button>
+			<button disbled class="etapa">5</button>
+			<button disbled class="etapa">6</button>
+			<button disbled class="etapa">7</button>
+			<button disbled class="etapa">8</button>
+		</div>
 	</div>
-
 	<button class="bt btn-dark" id="btVoltar">Voltar</button>
 	<script type="text/javascript">
 		document.getElementById("btVoltar").onclick = function () {
